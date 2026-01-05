@@ -1,7 +1,12 @@
 # Hướng Dẫn Deploy Memory Safe Guard lên Netlify
 
+## ✅ FIXED: Netlify Build Error
+**Vấn đề**: Lỗi dependency conflict giữa date-fns@4.1.0 và react-day-picker@8.10.1
+**Giải pháp**: Đã downgrade date-fns từ v4.1.0 xuống v3.6.0 ✅
+**Status**: Code đã được push lên GitHub, Netlify đang rebuild tự động
+
 ## 🚨 Vấn đề hiện tại
-Khi deploy lên Netlify, dữ liệu không được lưu vào Supabase mà vẫn sử dụng localStorage. Sau khi F5 (refresh), dữ liệu vẫn hiện lại như cũ.
+Sau khi build thành công, dữ liệu không được lưu vào Supabase mà vẫn sử dụng localStorage. Sau khi F5 (refresh), dữ liệu vẫn hiện lại như cũ.
 
 ## 🔧 Nguyên nhân và Giải pháp
 
